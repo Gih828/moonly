@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foca Aqui - Bem Vindo!</title>
+    <link rel="icon" type="image/x-icon" href="logo (1).PNG">
+   
+<style>
+    
+
+body{      
+min-height: 100%;
+position: relative;
+background-color: white;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+header{
+background-color: white;
+text-align: center;
+padding: 10px;
+}
+
+header img{
+max-width: 50px;
+height: auto;
+border-radius: 25px;
+}
+
+header img a{
+  width: 50%;
+}
+
+nav{
+background-color: white;
+padding: 10px;
+text-align: center;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+nav a{
+text-decoration: none;
+margin: 10px;
+color: black;
+font-weight: bold;
+margin-right: 20px;
+font-size: larger;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+input {
+  height: 30px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  border: 2px solid grey;
+  border-radius: 4px;
+}
+
+
+
+
+hr{
+    width: 70%;
+    margin-top: -5,5px;
+    margin-bottom: 20px;
+    background-color:grey;
+    color:grey;
+    border-width:0;
+    height:2px;
+}
+
+h1{
+    background-color: #b254fa;
+    font-style: 'Lucida sans';
+    color: #fbeb64;
+}
+
+figure{
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+
+.container{
+display: flex;
+padding-bottom: 20px;
+}
+
+.w3-input{
+    width: 96%;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color:#fbeb64 ;
+}
+
+.accordion:after {
+  content: '\02795'; 
+  font-size: 13px;
+  color:white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; 
+}
+
+
+.panel {
+padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+.conteudo-1{
+display: flex;
+}
+
+.esquerda{
+    justify-content: flex-start;
+    width:50%;
+    color: black;
+    font-size: 16px;   
+    margin-bottom: 60px;
+}
+
+.esquerda ul li{
+    list-style-type: none;
+    text-align: left;
+}
+
+.esquerda pre{
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.direita{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:top center;
+    justify-content: flex-start;
+    width:50%;
+    color: black;
+    font-size: 16px; 
+
+    margin-bottom: 60px;
+}
+
+.right{
+position: absolute;
+  right: 0;
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+
+
+
+.secaonewsletter {
+background-color: #ffba00;
+padding: 40px 0;
+}
+
+section{
+    display: block;
+}
+.row{
+    background-color: #b254fa;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: right;
+    display: flex;
+}
+
+.conteudo-direita{
+  width: 40%;
+  color: #b254fa;
+  background-color: #b254fa;
+  margin-top: 50px;
+  color:#fbeb64;
+}
+
+.conteudo-caixa{
+  margin-left: 350px;
+  width: 50%;
+  background-color: #b254fa;
+}
+
+h6{
+  font-size: 13px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+  color: #fbeb64;
+}
+
+.escreva{
+  font-size: 30px;
+  padding-right: 50px;
+  color: #fbeb64;
+}
+
+
+footer {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#b254fa;
+   color: white;
+   text-align: center;
+   display: flex;
+   justify-content: space-evenly;
+   font-style: 'lucinda sans';
+}
+
+.contact{
+text-align: left;
+}
+
+.contact ul li{
+    list-style-type: none;
+}
+
+.contact ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.redes{
+text-align: right ;
+}
+
+.redes img{
+padding-bottom: 0%;
+
+}
+
+.final{
+text-align: center;
+line-height: 1.6;
+}
+</style>
+</head>
+
+
+
+<body>
+<header>
+    <nav>
+           <a href="#"> Ajuda  </a>
+           <a href="produto.html"> Produtos   </a>
+           <a href="index.html"><img src="logo (1).PNG" width="150px" height="120px"></a>
+           <a href="sobre.html"> Sobre Nós    </a>
+           <label for="gsearch"></label>
+           <input type="search" id="gsearch" name="gsearch" placeholder="Pesquise Aqui...">
+       </nav>
+        </header>
+         <hr>
+
+  <h1>Ajuda - Suporte</h1>
+
+  <div class=" container">
+        <figure>
+        <img src="manual.png">
+        </figure>
+       
+        <figure>
+            <img src="suporte.png">
+        </figure>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    
+
+        
+        <input class="w3-input" type="text" placeholder="Pesquise suas Duvídas Aqui...">
+        <br>
+        <br>
+        <br>
+      
+
+
+
+
+        
+    
+
+        <button class="accordion">Como funciona?</button>
+        <div class="panel">
+          <p> O Moonly Funciona, trabalhando para uma saúde mental melhor para seu filho, como detecção de Ansiedade, 
+              Depressão, entre outros. Sendo de fácil aceeso a todos. </p>
+        </div>
+        
+        <button class="accordion">É via Wifi?</button>
+        <div class="panel">
+          <p> Sim, é conectado via wifi ou offline para elementos salvos.</p>
+        </div>
+        
+        <button class="accordion">Como esse aparelho pode ajudar meu filho?</button>
+        <div class="panel">
+          <p> O Moonly realiza os mesmo processo de terapia digital, dessa maneira sendo de forma lúdica e mais interativo para crianças. </p>
+          </p>
+        </div>
+
+        <button class="accordion">Qual o prazo de entrega?</button>
+        <div class="panel">
+          <p> No máximo em até 7 dias de entrega (varia de determinadas regiões do Brasil).</p>
+        </div>
+
+        <button class="accordion">Garantia de quanto tempo?</button>
+        <div class="panel">
+          <p> São 3 meses de garantia para tal produto.
+            Para mais ajuda, entre em contato conosco.</p>
+        </div>
+  <br>
+  
+  <h1>Informações de Contato </h1>
+
+  <div class="container">
+    <div class="conteudo-1">
+        <div class="esquerda">
+        <span><pre>
+            <li>       Telefone: 0800-0000</li> 
+            <li>       Email: xxxx@focamail.com</li> 
+            <li>       Whatsapp: (11) XXXX-XXXX</li> 
+            </ul>
+        </span></pre>
+        </div>
+        <div class="direita">
+            <img src="reclame.png" class="right">
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+
+<div class="container">
+    <div class="row linhafromfoot">
+    <div class="conteudo-direita">
+    <h1 class="escreva">Receba nossas novidades</h1>
+    </div>
+    <div class="conteudo-caixa">
+    <form action="?rr=2#secainewsletter" method="post" id="userForm" name="formnews">
+    <div class="row">
+    
+    
+    <div class="col-12 col-sm-8">
+    <h6 style="opacity: 0;">none</h6>
+    <input type="text" name="nome_newsletter" class="camponomefoo" placeholder="Seu Nome" required>
+    </div>
+    <div class="col-12 col-sm-4">
+    <h6>Data de nascimento</h6>
+    <input type="date" class="datapick" name="data_de_nascimento_" placeholder="Data de nascimento" required>
+    
+    
+    </div>
+    
+    
+    </div>
+    
+    
+    <div class="row">
+    <div class="col-12">
+    <input type="email" name="email_newsletter" placeholder="Seu E-mail" required>
+    </div>
+    </div>
+    
+    
+    <div class="row">
+    <div class="col-12">
+    
+    
+    <div class="g-recaptcha" data-sitekey="6Lds_5EjAAAAALoF7033j4mbcAnBRTxYah2SMnnB" data-callback="callback"></div>
+    <input type="hidden" id="captcha-response" name="captcha-response" />
+    <input type="submit" value="Inscreva-se " name="enviar_newsletter" class=" botaoenvianewslette" id="submit-button">
+    
+    
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+    </section>
+    
+    
+
+
+
+
+
+
+<br>
+
+
+
+<br>
+<br>
+<br>
+
+
+
+
+<footer>
+    <div class="contact">
+<ul>
+    <li><a href="ajuda.html"> Contato</a> </li>
+    <li><a href="ajuda.html">Manual do usuário </a> </li>
+    <li><a href="sobre.html"> Sobre Nós</a>  </li>
+    <li><a href="index.html"> Home</a></li>
+</ul></div>
+
+    <div class="redes">
+<ul>
+    <img src="insta.png" height="15px" width="15px"> <span>@foocaaqui</span><br>
+    <img src="tube.png" height="15px" width="15px"> <span>@foocaaqui</span><br>
+    <img src="mail.png" height="15px" widht="15px"> <span>@focamail.com</span>
+</div>
+    <div class="final">
+    <span>Foca Aqui 2023 - Todos os Direitos Reservados </span><br>
+    <span> Conheça nossos Termos de Uso e nossa Política de Privacidade</span><br>
+    <span> 0800 - xxxx</span><br>
+    <span>XXX, SP, Brasil</span>
+    </div>
+</footer>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+          console.log("clicou")
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+</body>
+</html>
